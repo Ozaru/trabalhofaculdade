@@ -1,0 +1,101 @@
+body {
+    background-color: #0f172a;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    background-color: #111827;
+    padding: 20px;
+}
+
+.nav-tabs {
+    border: none;
+    margin-top: 20px;
+}
+
+.nav-tabs .nav-link {
+    color: white;
+    border: none;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.nav-tabs .nav-link:hover {
+    color: #60a5fa;
+    transform: translateY(-2px);
+}
+
+.nav-tabs .nav-link.active {
+    background-color: #212631;
+    color: white;
+    border-radius: 10px;
+}
+
+.tab-pane {
+    background-color: #1e293b;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #60a5fa;
+    font-weight: bold;
+}
+
+p {
+    line-height: 1.8;
+}
+
+img {
+    transition: 0.3s;
+}
+
+img:hover {
+    transform: scale(1.08);
+}
+
+a {
+    color: #60a5fa;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #93c5fd;
+}
+
+.rotacao {
+    transition: 0.5s;
+}
+
+.rotacao:hover {
+    transform: rotateY(360deg) scale(1.1);
+}
+
+.col-md-3 {
+    transition: 0.3s;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.col-md-3:hover {
+    background-color: #273449;
+    transform: translateY(-5px);
+}
+
+.letra {
+    opacity: 0;
+    display: inline-block;
+    transform: translateY(-40px) scale(0.5);
+    animation: aparecer 0.5s forwards;
+}
+
+@keyframes aparecer {
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
